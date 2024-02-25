@@ -33,3 +33,16 @@ let cat = {
   name: "야옹이",
   color: "yellow",
 } as const;
+
+// Non Null 단언
+type Post = {
+  title: string;
+  author?: string;
+};
+
+let post: Post = {
+  title: "게시글1",
+  author: "이정환",
+};
+
+const len: number = post.author!.length;

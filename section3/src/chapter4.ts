@@ -38,6 +38,25 @@ let union3: Union1 = {
   color: "",
 };
 
+type a = {
+  color: string;
+};
+
+type b = {
+  name: string;
+  language: string;
+};
+
+type Union2 = a & b;
+
+const myA: a = { color: "red" };
+
+let union4: Union2 = {
+  name: "",
+  color: "",
+  language: "",
+};
+
 // let union4:Union1={
 //   name:""
 // }

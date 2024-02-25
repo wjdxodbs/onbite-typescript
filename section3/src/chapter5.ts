@@ -1,5 +1,4 @@
 // 타입 추론
-
 let a: number = 10;
 let b = "hello";
 let c = {

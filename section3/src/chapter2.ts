@@ -41,19 +41,7 @@ const anyExam = () => {
   let neverVar: never;
 
   anyVar = unknownVar;
+  // unknownVar = anyVar
   undefinedVar = anyVar;
   // neverVar = anyVar
 };
-
-// Non Null 단언
-type Post = {
-  title: string;
-  author?: string;
-};
-
-let post: Post = {
-  title: "게시글1",
-  author: "이정환",
-};
-
-const len: number = post.author!.length;

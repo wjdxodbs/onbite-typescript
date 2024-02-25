@@ -1,5 +1,4 @@
 // 기본 타입간의 호환성
-
 let num1: number = 10;
 let num2: 10 = 10;
 
@@ -13,9 +12,9 @@ type Animal = {
   color: string;
 };
 
-type Dog = {
-  name: string;
-  color: string;
+type Dog = Animal & {
+  // name: string;
+  // color: string;
   breed: string;
 };
 
@@ -38,9 +37,9 @@ type Book = {
   price: number;
 };
 
-type ProgrammingBook = {
-  name: string;
-  price: number;
+type ProgrammingBook = Book & {
+  // name: string;
+  // price: number;
   skill: string;
 };
 
