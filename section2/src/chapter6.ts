@@ -5,6 +5,7 @@ let anyVar: any = 10;
 anyVar = "hello";
 
 let num: number = 10;
+// anyVar = num
 num = anyVar;
 
 // unknown
@@ -14,3 +15,4 @@ unknownVar = 1;
 unknownVar = () => {};
 
 // num = unknownVar;
+// anyVar = unknownVar;

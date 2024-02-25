@@ -8,6 +8,13 @@ const func2 = (): void => {
   console.log("hello");
 };
 
+let a: void;
+// a = 1
+// a = 'hello'
+// a = {}
+a = undefined;
+// a = null
+
 // never -> 불가능한 타입
 
 const func3 = (): never => {
@@ -17,3 +24,10 @@ const func3 = (): never => {
 const func4 = (): never => {
   throw new Error();
 };
+
+let b: never;
+// b = 1;
+// b = {};
+// b = "";
+// b = undefined;
+// b = null;
