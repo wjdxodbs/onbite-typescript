@@ -1,5 +1,4 @@
 // 첫번째 사례
-
 const swap = <T, U>(a: T, b: U) => {
   return [b, a];
 };
