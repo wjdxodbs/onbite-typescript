@@ -3,6 +3,7 @@ import "./App.css";
 import Editor from "./components/Editor";
 import TodoItem from "./components/TodoItem";
 import { Todo } from "./types";
+import _ from "lodash";
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
