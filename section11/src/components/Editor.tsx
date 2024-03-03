@@ -21,7 +21,7 @@ const Editor = ({ onClickAdd, children }: Props) => {
     <>
       <input value={text} onChange={onChangeInput} />
       <button onClick={onClickBtn}>추가</button>
-      {children}
+      {/* {children} */}
     </>
   );
 };
