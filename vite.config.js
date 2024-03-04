@@ -4,48 +4,19 @@ import path from "path";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  plugins: [
-    react(),
-    VitePWA({
-      registerType: "autoUpdate",
-      devOptions: {
-        enabled: true,
-      },
-      manifest: {
-        name: "오늘은 낚시왕",
-        short_name: "오늘은 낚시왕",
-        theme_color: "#ffffff",
-        start_url: "/",
-        icons: [
-          {
-            src: "./icons/logo192x192.webp",
-            sizes: "192x192",
-            type: "image/webp",
-          },
-          {
-            src: "./icons/logo192x192.webp",
-            sizes: "192x192",
-            type: "image/webp",
-            purpose: "any maskable",
-          },
-          {
-            src: "./icons/logo512x512.webp",
-            sizes: "512x512",
-            type: "image/webp",
-          },
-          {
-            src: "./icons/logo512x512.webp",
-            sizes: "512x512",
-            type: "image/webp",
-            purpose: "any maskable",
-          },
-        ],
-      },
-    }),
-  ],
+  plugins: [react()],
   server: {
     port: 5173,
     host: "0.0.0.0",
+    proxy: {
+      "/api": {
+        target: import.meta.env.VITE_BASE_URL,
+        changeOrigin: true,
+        secure: false,
+        // 요청 경로에서 '/api'를 제거하고, 나머지 경로를 유지합니다.
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
   resolve: {
     // 경로 alias 설정
