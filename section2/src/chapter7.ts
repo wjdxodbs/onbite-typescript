@@ -10,7 +10,6 @@ const func2 = (): void => {
 
 let a: void;
 // a = 1
-// a = 'hello'
 // a = {}
 a = undefined;
 // a = null

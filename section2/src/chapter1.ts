@@ -1,8 +1,9 @@
 // number
 let num1: number = 123;
 let num2: number = -123;
-let num3: number = Infinity;
-let num4: number = NaN;
+let num3: number = 0.123;
+let num4: number = Infinity;
+let num5: number = NaN;
 
 // string
 let str1: string = "hello";
@@ -23,4 +24,3 @@ let unde1: undefined = undefined;
 // 리터럴 -> 값
 let numA: 10 = 10;
 let strA: "hello" = "hello";
-// let boolA:true=false

@@ -13,6 +13,7 @@ let multiArr: (string | number)[] = [1, "hello"];
 let doubleArr: number[][] = [
   [1, 2, 3],
   [4, 5],
+  [6, 7, 8, 9],
 ];
 
 let doubleArr1: (string | number)[][] = [
@@ -32,5 +33,4 @@ const user: [string, number][] = [
   ["이아무개", 2],
   ["김아무개", 3],
   ["박아무개", 4],
-  // [5, "1"],
 ];

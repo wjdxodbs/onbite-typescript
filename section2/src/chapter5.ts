@@ -29,5 +29,3 @@ const user3 = {
   role: Role.GUEST, // 2 <- 게스트
   language: Language.english,
 };
-
-console.log(user1, user2, user3);
